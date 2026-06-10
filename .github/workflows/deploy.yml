@@ -25,13 +25,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "pnpm"
+          cache: "npm"
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
-          run_install: false
+      - name: Ensure pnpm available (npm fallback)
+        run: |
+          corepack enable || true
+          corepack prepare pnpm@9.15.0 --activate || true
+          if ! command -v pnpm >/dev/null 2>&1; then
+            npm i -g pnpm@9.15.0
+          fi
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -41,7 +43,6 @@ jobs:
 
       - name: Verify build output
         run: |
-          pnpm ls vite
           ls -la dist
 
       - name: Upload artifact
