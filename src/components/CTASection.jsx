@@ -24,7 +24,7 @@ export default function CTASection() {
                 {ctaContent.eyebrow}
               </p>
 
-              <h2 className="mt-4 max-w-4xl text-5xl font-black uppercase leading-none tracking-editorial sm:text-7xl">
+              <h2 className="mt-4 max-w-4xl heading-section text-bone">
                 {ctaContent.title}
               </h2>
 

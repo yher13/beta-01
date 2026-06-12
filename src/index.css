@@ -7,6 +7,14 @@
   background: #050505;
   color: #f5f5f0;
   font-family: Inter, Arial, sans-serif;
+
+  /* Type scale — clamp() handles fluid typography from mobile → 4K.
+     Tweak these 3 vars to rescale the whole site. */
+  --type-hero: clamp(2.5rem, 8vw, 9.5rem);
+  --type-section: clamp(1.875rem, 4.5vw, 4.5rem);
+  --type-card: clamp(1.125rem, 1.8vw, 1.875rem);
+  --tracking-heading: -0.02em;
+  --leading-heading: 0.95;
 }
 
 html {
@@ -53,4 +61,28 @@ body {
 
 .card-border {
   @apply border border-white/10 bg-white/[0.025] backdrop-blur;
+}
+
+/* Headings — semantic, fluid, balanced. Use these instead of
+   ad-hoc font-size/leading utilities so the whole site scales from
+   one place (the :root vars above). */
+.heading-hero {
+  font-size: var(--type-hero);
+  line-height: var(--leading-heading);
+  letter-spacing: var(--tracking-heading);
+  text-wrap: balance;
+}
+
+.heading-section {
+  font-size: var(--type-section);
+  line-height: var(--leading-heading);
+  letter-spacing: var(--tracking-heading);
+  text-wrap: balance;
+}
+
+.heading-card {
+  font-size: var(--type-card);
+  line-height: 1.1;
+  letter-spacing: var(--tracking-heading);
+  text-wrap: balance;
 }

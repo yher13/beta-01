@@ -7,7 +7,7 @@ export default function ProductGrid({ products = [] }) {
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
             <p className="eyebrow">Featured Products</p>
-            <h2 className="editorial-title mt-4 text-5xl leading-none sm:text-7xl">
+            <h2 className="editorial-title heading-section mt-4">
               First pieces.
               <br />
               No apology.
@@ -45,7 +45,7 @@ export default function ProductGrid({ products = [] }) {
                       {product.category}
                     </p>
 
-                    <h3 className="mt-2 text-xl font-black uppercase leading-tight tracking-tight text-bone">
+                    <h3 className="heading-card mt-2 text-bone">
                       {product.name}
                     </h3>
                   </div>

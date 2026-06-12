@@ -16,7 +16,7 @@ export default function Hero() {
         <div>
           <p className="eyebrow">{heroContent.eyebrow}</p>
 
-          <h1 className="editorial-title mt-6 max-w-5xl text-6xl leading-[0.82] sm:text-8xl lg:text-[9.5rem]">
+          <h1 className="editorial-title heading-hero mt-6">
             {heroContent.headline}
           </h1>
 
