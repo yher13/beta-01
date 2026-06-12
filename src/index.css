@@ -71,6 +71,7 @@ body {
   line-height: var(--leading-heading);
   letter-spacing: var(--tracking-heading);
   text-wrap: balance;
+  text-transform: uppercase;
 }
 
 .heading-section {
@@ -78,6 +79,7 @@ body {
   line-height: var(--leading-heading);
   letter-spacing: var(--tracking-heading);
   text-wrap: balance;
+  text-transform: uppercase;
 }
 
 .heading-card {
@@ -85,4 +87,5 @@ body {
   line-height: 1.1;
   letter-spacing: var(--tracking-heading);
   text-wrap: balance;
+  text-transform: uppercase;
 }
