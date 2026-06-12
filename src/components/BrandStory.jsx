@@ -7,7 +7,7 @@ export default function BrandStory() {
         <div className="sticky top-24">
           <p className="eyebrow">{brandStory.eyebrow}</p>
 
-          <h2 className="editorial-title mt-4 text-5xl leading-none sm:text-7xl">
+          <h2 className="editorial-title heading-section mt-4">
             {brandStory.title}
           </h2>
         </div>

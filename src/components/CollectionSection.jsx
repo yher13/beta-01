@@ -4,7 +4,7 @@ export default function CollectionSection({ items = [] }) {
       <div className="section-shell">
         <div className="mb-12">
           <p className="eyebrow">Collection Highlight</p>
-          <h2 className="editorial-title mt-4 max-w-4xl text-5xl leading-none sm:text-7xl">
+          <h2 className="editorial-title heading-section mt-4 max-w-4xl">
             Built as a system, not a season.
           </h2>
         </div>
@@ -28,7 +28,7 @@ export default function CollectionSection({ items = [] }) {
                   {collection.subtitle}
                 </p>
 
-                <h3 className="mt-3 text-3xl font-black uppercase tracking-tight text-bone sm:text-4xl">
+                <h3 className="heading-card mt-3 text-bone">
                   {collection.title}
                 </h3>
 
